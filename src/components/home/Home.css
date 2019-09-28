@@ -1,0 +1,27 @@
+.social-div {
+	position: fixed;
+	bottom: 4vh;
+	left: 2vw;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+.social {
+	color: white;
+	height: 4vh;
+	margin: 0 18px;
+}
+.social:hover {
+	color: #f3ab77;
+}
+
+@media only screen and (max-width: 1000px) {
+	.social-div {
+		left: 4vw;
+		bottom: 3vh;
+	}
+	.social {
+		height: 4.5vh;
+		margin: 0 30px;
+	}
+}

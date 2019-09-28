@@ -1,0 +1,80 @@
+.contact_container
+{
+    width: 100vw;
+    min-height: 100vh;
+    position:absolute;
+    z-index: 4;
+    top: 0px;
+    left:0px;
+    /* overflow: hidden; */
+    background:rgba(0,0,0,0.2);
+	background-size: cover !important;
+    background-position: center !important;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    opacity: 0;
+    transform: translateY(-400vh);
+    transition: opacity 0.5s ease-out,transform 0s 0.5s; 
+}
+.contact_heading_conatiner
+{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    margin: 10vh 0 8vh 0;
+}
+.contact_heading
+{
+    margin: 0px;
+    font-family: Variane Script;
+    font-size: 15vh;
+    font-weight: 300;
+    color: #EED4AA;
+}
+.contact_card_container
+{
+    display: flex;
+    justify-content: center;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    
+}
+.contact_visible
+{
+    top:0px;
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.5s ease-out, transform 0s;
+}
+.cut
+{
+    position: absolute;
+    top: 1vh;
+    right: 2vw;
+    font-size: 6vh;
+    cursor: pointer;
+    color:#EED4AA;
+}
+
+@media only screen and (max-width: 1000px) {
+    .contact_heading_conatiner {
+        margin: 4vh 0 1vh 0;
+    }
+    .contact_heading {
+        font-size: 15vw;
+    }
+    .cut {
+        font-size: 5vh;
+        font-weight: 700;
+        top: 3vh;
+        right: 4vw;
+    }
+}

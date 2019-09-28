@@ -1,0 +1,102 @@
+.card_container
+{
+  width: 15vw;
+  height: 50vh;
+  background: #373131;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-content: center;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+.card_image_conatiner
+{
+    border-radius: 50%;
+    border: 3px solid #DDB675;
+    height: 20vh;
+    width: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+.card_image
+{
+    height:19vh;
+    width: 19vh;
+    clip-path: circle(50%);
+}
+.card_title_conatiner
+{
+
+}
+.card_name
+{
+    color:#DDB675;
+    font-size: 3vh;
+    margin: 0px;
+    text-align: center;
+    font-weight: 
+}
+.card_designation
+{
+    color:#DDB675;
+    font-size: 2.4vh;
+    margin: 0px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.card_tel_container
+{
+    width: 80%;
+    height: 5vh;
+    background: #DDB675;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+}
+.card_tel
+{
+    text-decoration: none;
+    color: black;
+    font-size: 2vh;
+    font-weight: 600;
+}
+
+@media only screen and (max-width: 1000px) {
+    .card_container {
+        width: 43vw;
+        height: 35vh;
+        margin: 1vh 2vw;
+    }
+    .card_image_conatiner {
+        height: 30vw;
+        width: 30vw;
+    }
+    .card_image {
+        height:28vw;
+        width: 28vw;
+    }
+    .card_name {
+        font-size: 4.3vw;
+    }
+    .card_designation {
+        font-size: 4.2vw;
+    }
+    .card_tel_container {
+        height: 7vw;
+    }
+    .card_tel {
+        font-size: 3.3vw;
+    }
+}
