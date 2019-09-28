@@ -93,6 +93,26 @@ body {
 	left: 100px;
 	transform: scale(0.5);
 }
+.nav_desk
+{
+  position: absolute;
+  z-index: 3;
+  top:0px;
+  right: 0px;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 12.5vw;
+  padding-right: 80px;
+  padding-top: 10px;
+}
+.nav_desk_desc
+{
+  font-size: 2.2vw;
+  font-family: Variane Script;
+  cursor: pointer;
+}
 .logo {
 	width: 80%;
 	filter: none;
@@ -162,7 +182,8 @@ body {
 	transform: translate(-50%, 0%) rotate(45deg);
 	-webkit-animation: fade_move_down 4s ease-in-out infinite;
 	-moz-animation:    fade_move_down 4s ease-in-out infinite;
-	animation:         fade_move_down 4s ease-in-out infinite;
+  animation:         fade_move_down 4s ease-in-out infinite;
+  cursor: pointer;
 }
 .get-going .scroll-down {
 	display: none;
@@ -266,7 +287,8 @@ body {
 		height: 50px;
 		bottom: 80px;
 		border-bottom: 6px solid #fff;
-		border-right: 6px solid #fff;
+    border-right: 6px solid #fff;
+    
 	}
 	.about-div {
 		width: 80%;
