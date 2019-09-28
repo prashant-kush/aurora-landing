@@ -305,4 +305,7 @@ body {
 	.get-going .about-div {
 		transform: translateY(115vh);
 	}
+	.nav_desk {
+		display: none;
+	}
 }

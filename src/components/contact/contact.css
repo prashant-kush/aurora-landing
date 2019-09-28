@@ -14,7 +14,7 @@
     justify-content: flex-start;
     flex-direction: column;
     opacity: 0;
-    transform: translateY(-100vh);
+    transform: translateY(-400vh);
     transition: opacity 0.5s ease-out,transform 0s 0.5s; 
 }
 .contact_heading_conatiner
@@ -31,7 +31,7 @@
 {
     margin: 0px;
     font-family: Variane Script;
-    font-size: 150px;
+    font-size: 15vh;
     font-weight: 300;
     color: #EED4AA;
 }
@@ -57,9 +57,24 @@
 .cut
 {
     position: absolute;
-    top:10px;
-    right: 20px;
-    font-size: 54px;
+    top: 1vh;
+    right: 2vw;
+    font-size: 6vh;
     cursor: pointer;
     color:#EED4AA;
+}
+
+@media only screen and (max-width: 1000px) {
+    .contact_heading_conatiner {
+        margin: 4vh 0 1vh 0;
+    }
+    .contact_heading {
+        font-size: 15vw;
+    }
+    .cut {
+        font-size: 5vh;
+        font-weight: 700;
+        top: 3vh;
+        right: 4vw;
+    }
 }

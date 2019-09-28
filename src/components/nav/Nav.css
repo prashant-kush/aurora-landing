@@ -1,0 +1,79 @@
+.burgers {
+	display: none;
+}
+.mobile-nav {
+	display: none;
+}
+
+@media only screen and (max-width: 1000px) {
+	.burgers {
+		display: block;
+		position: absolute;
+		top: 7vh;
+		right: 2vh;
+		outline: 0;
+		cursor: pointer;
+		border-bottom: 10px solid currentColor;
+		width: 11vw;
+		transition: border-bottom 0.5s ease-in-out, top 0.8s ease-out, right 0.8s ease-out;
+		z-index: 3;
+	}
+	.get-going .burgers {
+		top: 4vh;
+		right: 4vh;
+	}
+	.burgers::-moz-focus-inner {
+		border: 0;
+		padding: 0;
+	}
+	.burgers:before, .burgers:after {
+		content: "";
+		display: block;
+		border-bottom: 10px solid currentColor;
+		width: 100%;
+		margin-bottom: 2vw;
+		transition: transform 0.4s ease-in-out;
+	}
+	.burgers.open {
+		border-bottom: 5px solid transparent;
+		transition: border-bottom 0.4s ease-in-out;
+	}
+	.burgers.open:before {
+		transform: rotate(-405deg) translateY(2vw) translateX(-2vw);
+		transition: transform 0.4s ease-in-out;
+	}
+	.burgers.open:after {
+		transform: rotate(405deg) translateY(0) translateX(0);
+		transition: transform 0.4s ease-in-out;
+	}
+
+	.mobile-nav {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100vw;
+		height: 100vh;
+		backdrop-filter: blur(5px) brightness(0.5);
+		z-index: 2;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: flex-start;
+		opacity: 0;
+		transform: translateX(-200vw);
+		transition: opacity 0.3s ease-out, transform 0s 0.3s;
+	}
+	.mobile-nav.open {
+		transition: opacity 0.3s ease-out, transform 0s;
+		opacity: 1;
+		transform: translateX(0);
+	}
+	.mobile-nav > span:nth-child(1) {
+		margin-top: 30vh;
+	}
+	.mobile-nav > span {
+		font-size: 5vh;
+		margin-bottom: 3vh;
+		border-bottom: 5px solid white;
+	}
+}

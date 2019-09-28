@@ -21,7 +21,7 @@ const Contact=({isContactModalOpen,modalToggle})=>
             cont.removeEventListener('touchstart', dummy);
             cont.removeEventListener('touchmove', dummy);
         };
-    })
+    });
 
     return(
        

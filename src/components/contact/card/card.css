@@ -1,7 +1,7 @@
 .card_container
 {
-  width: 310px;
-  height: 500px;
+  width: 15vw;
+  height: 50vh;
   background: #373131;
   border-radius: 10px;
   display: flex;
@@ -18,8 +18,8 @@
 {
     border-radius: 50%;
     border: 3px solid #DDB675;
-    height: 200px;
-    width: 200px;
+    height: 20vh;
+    width: 20vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -28,8 +28,8 @@
 }
 .card_image
 {
-    height:190px;
-    width: 190px;
+    height:19vh;
+    width: 19vh;
     clip-path: circle(50%);
 }
 .card_title_conatiner
@@ -39,7 +39,7 @@
 .card_name
 {
     color:#DDB675;
-    font-size: 30px;
+    font-size: 3vh;
     margin: 0px;
     text-align: center;
     font-weight: 
@@ -47,7 +47,7 @@
 .card_designation
 {
     color:#DDB675;
-    font-size: 24px;
+    font-size: 2.4vh;
     margin: 0px;
     font-weight: 300;
     text-align: center;
@@ -56,7 +56,7 @@
 .card_tel_container
 {
     width: 80%;
-    height: 50px;
+    height: 5vh;
     background: #DDB675;
     border-radius: 8px;
     display: flex;
@@ -69,6 +69,34 @@
 {
     text-decoration: none;
     color: black;
-    font-size: 20px;
+    font-size: 2vh;
     font-weight: 600;
+}
+
+@media only screen and (max-width: 1000px) {
+    .card_container {
+        width: 43vw;
+        height: 35vh;
+        margin: 1vh 2vw;
+    }
+    .card_image_conatiner {
+        height: 30vw;
+        width: 30vw;
+    }
+    .card_image {
+        height:28vw;
+        width: 28vw;
+    }
+    .card_name {
+        font-size: 4.3vw;
+    }
+    .card_designation {
+        font-size: 4.2vw;
+    }
+    .card_tel_container {
+        height: 7vw;
+    }
+    .card_tel {
+        font-size: 3.3vw;
+    }
 }
