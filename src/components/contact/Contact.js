@@ -1,7 +1,7 @@
 import React,{useEffect} from "react";
 import "./contact.css";
 import Card from "./card/card";
-import arihant from "../../assets/gond.jpg";
+import arihant from "../../assets/arihant.jpg";
 import chotu from "../../assets/chotu.jpg";
 import chandbhosad from "../../assets/chandu.jpg";
 import rockstar from "../../assets/rockstar.jpg";
@@ -36,10 +36,10 @@ const Contact=({isContactModalOpen,modalToggle})=>
                     </h1>
                 </div>
                 <div className="contact_card_container">
-                    <Card name="Arihant Jain" designation="Coordinator" tel={9599474147} img={arihant}/>
+                    <Card name="Arihant Jain" designation="Coordinator" tel={7509998118} img={arihant}/>
                     <Card name="Chandan Kumar" designation="Coordinator" tel={7004727387} img={chandbhosad}/>
                     <Card name="Ojaswa Sharma" designation="Coordinator" tel={9131102279} img={chotu}/>
-                    <Card name="Ruchika Agarwal" designation="Coordinator" tel={9424542227} img={rockstar}/>
+                    <Card name="Ruchika Agrawal" designation="Coordinator" tel={7470358637} img={rockstar}/>
                 </div>
             </div>
         
