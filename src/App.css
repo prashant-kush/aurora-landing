@@ -113,6 +113,13 @@ body {
   font-family: Variane Script;
   cursor: pointer;
 }
+.nav_desk_desc.bout:after
+{
+	content: "About"
+}
+.get-going .nav_desk_desc.bout:after {
+	content: "Home";
+}
 .logo {
 	width: 80%;
 	filter: none;

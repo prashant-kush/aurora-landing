@@ -101,9 +101,9 @@ const Home=()=>
           <span className="heading">Aurora<span className="small">'20</span></span>
         </section>
         <ul className="nav_desk">
-          <li className="nav_desk_desc" id="nav_desk_about">About</li>
+          <li className="nav_desk_desc bout" id="nav_desk_about"></li>
           <li className="nav_desk_desc" onClick={()=>{modalToggle(true)
-            document.getElementsByClassName("chodu_bg")[0].style.visibility="hidden"
+            document.getElementsByClassName("chodu_bg")[0].style.display="none"
           }} >Contact</li>
         </ul>
         <span className="date">14th - 16th Feb</span>

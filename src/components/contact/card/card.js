@@ -6,7 +6,7 @@ const Card=({img,name,designation,tel})=>
     return(
         <div className="card_container">
             <div className="card_image_conatiner">
-                <img className="card_image" src={img}></img>
+                <img className="card_image" alt="coordinator" src={img}></img>
             </div>
             <div className="card_title_conatiner">
                 <h2 className="card_name">{name}</h2>
